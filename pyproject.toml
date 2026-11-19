@@ -1,0 +1,21 @@
+[project]
+name = "helpdesk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "efv-devs", email = "353008081+efv-devs@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=2.10.0",
+    "numpy>=2.5.5",
+    "pillow>=13.0.0",
+]
+
+[project.scripts]
+helpdesk = "helpdesk:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
